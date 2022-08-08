@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import stockImg from "./stocks.svg";
 import "./App.css";
 import { useState } from "react";
 
@@ -38,7 +39,7 @@ function App() {
             "%"
         );
       } else if (change === 0) {
-        setMessage("No change from original value, GoodLuck");
+        setMessage("No change from original value, GoodLuck.");
       } else {
         setMessage(
           "Oops! Unfortunately you're at a loss of ₹" +
@@ -58,7 +59,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <h1>Profit and Loss Calculator</h1>
+        <h1 className="main__heading">Profit and Loss Calculator</h1>
       </header>
       <main className="main">
         <div className="input__div">
@@ -91,9 +92,16 @@ function App() {
               id="stockcr_rate"
             />
           </div>
-          <button onClick={setOutputMessage}>Tell Me!</button>
+          <button onClick={setOutputMessage} className="tellme">
+            Tell Me!
+          </button>
         </div>
-        <div className="output">{message}</div>
+        <div className="output">
+          <div className="stock__img">
+            <img className="image" src={stockImg} alt="bar graph" />
+          </div>
+          <span className="output__message">{message}</span>
+        </div>
       </main>
     </div>
   );
