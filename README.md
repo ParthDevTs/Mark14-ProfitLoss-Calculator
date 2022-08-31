@@ -12,6 +12,11 @@ Calculate Profit and Loss of the shares by giving the following values:
   The Output will be generated in percentage.
   
 <br>
+<br>
+This application is Made using <b>ReactJs</b>
+<br>
+<br>
+
 Access the Application here: https://mark14-profitloss-parth.netlify.app/
 
 Happy Coding <3
