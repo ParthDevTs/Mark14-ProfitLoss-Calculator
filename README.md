@@ -3,7 +3,10 @@
 Calculate Profit and Loss of the shares by giving the following values:
 
 <ol>
-Price at which shares were bought
-Number of Shares that were bought
-Current price of the Share
+<li>Price at which shares were bought.</li>
+<li>Number of Shares that were bought.</li>
+<li>Current price of the Share<./li>
 </ol>
+  
+<br>
+  The Output will be generated in percentage.
