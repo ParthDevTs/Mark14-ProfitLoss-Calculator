@@ -22,8 +22,10 @@ function App() {
   }
 
   function setOutputMessage() {
-    if (stockPrice === 0 || quantity === 0 || currentRate === 0) {
-      setMessage("Please fill all the fields and then check Returns.");
+    if (stockPrice <= 0 || quantity <= 0 || currentRate <= 0) {
+      setMessage(
+        "Please check that all fields are correctly filled then check the returns."
+      );
     } else {
       let totalPrice = stockPrice * quantity;
       let currentPrice = currentRate * quantity;
